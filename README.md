@@ -42,7 +42,7 @@ docker run -p 8080:8080 -e "SWAGGER_MOCK_SPECIFICATION_URL=https://raw.githubuse
 
 # with local file
 ## (Mac & Linux)
-docker run -p 8080:8080 -v $PWD/examples/petstore.yaml:/openapi/petstore.yaml -e "SWAGGER_MOCK_SPECIFICATION_URL=/openapi/petstore.yaml" --rm swaggermock/swagger-mock
+docker run -p 8080:8080 -v $PWD/examples/core.yaml:/openapi/core.yaml -e "SWAGGER_MOCK_SPECIFICATION_URL=/openapi/core.yaml" --rm swaggermock/swagger-mock
 ### (Windows)
 docker run -p 8080:8080 -v %cd%\examples\core.yaml:/openapi/core.yaml -e "SWAGGER_MOCK_SPECIFICATION_URL=/openapi/core.yaml" --rm swaggermock/swagger-mock
 ```
